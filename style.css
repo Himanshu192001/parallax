@@ -1,0 +1,114 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.wrapper
+{
+    height: 100vh;
+    overflow-x: hidden;
+    /* to turn on the 3d  */
+    perspective:10px;
+}
+
+.container
+{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* to style the child in 3d */
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.background
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    transform: translateZ(-40px) scale(6);
+    z-index: -1;
+}
+
+.foreground
+{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform:translateZ(-20px) scale(3);
+    z-index: -1;
+}
+
+h1{
+    position: absolute;
+    font-size: 10rem;
+    font-weight: 600;
+    top: 8rem;
+    left:18rem;
+    letter-spacing:4px;
+    color:white;
+    text-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+section
+{
+    background-color: rgb(45, 45, 45);
+    padding: 5rem 0;
+    color: white;
+}
+
+.secHeading
+{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+
+.text
+{
+    padding: 0 10rem;
+    margin: 5rem 0;
+    font-size: 1.5rem;
+}
+
+.bg
+{
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.bg1{
+    background-image: url(./images/sport-1.jpg);
+}
+
+.desc
+{
+    background-color: white;
+    position: absolute;
+    color: black;
+    font-weight: 800px;
+    font-size:  3.5rem;
+    padding: 1rem 2.5rem;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+.bg2{
+    background-image: url(./images/sport-2.jpg);
+}
+
+.bg3
+{
+    background-image: url(./images/sport-3.jpg);
+}
